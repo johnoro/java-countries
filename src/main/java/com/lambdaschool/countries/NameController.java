@@ -10,7 +10,7 @@ import java.util.ArrayList;
 @RequestMapping("/names")
 public class NameController {
   @RequestMapping("/all")
-  public ArrayList<String> getNames() {
+  public ArrayList<String> getCountryNames() {
     CountriesApplication.sortAlphabetical();
 
     ArrayList<String> names = new ArrayList<>();
@@ -22,7 +22,7 @@ public class NameController {
   }
 
   @RequestMapping("/begin")
-  public ArrayList<Country> getCountryByStart(
+  public ArrayList<Country> getCountriesByStart(
     @RequestParam(value = "letter", defaultValue = "A") char letter
   ) {
     CountriesApplication.sortAlphabetical();
@@ -33,7 +33,7 @@ public class NameController {
   }
 
   @RequestMapping("/size")
-  public ArrayList<Country> getCountryBySize(
+  public ArrayList<Country> getCountriesByNameLength(
     @RequestParam(value = "letters", defaultValue = "0") int letters
   ) {
     CountriesApplication.sortAlphabetical();

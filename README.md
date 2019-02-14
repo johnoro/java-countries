@@ -23,14 +23,14 @@ The countries of the world have many different defining attributes including lan
       * return the names of all the countries alphabetically
     - [x] /names/begin?letter=
       * return the countries alphabetically that begin with the given letter
-    - [ ] /names/size?letters=
+    - [x] /names/size?letters=
       * return the countries alphabetically that have a name equal to or longer than the given length
 
-    - [ ] /population/size?people=
+    - [x] /population/size?people=
       * return the countries that have a population equal to or greater than the given population
-    - [ ] /population/min
+    - [x] /population/min
       * return the country with the smallest population
-    - [ ] /population/max
+    - [x] /population/max
       * return the country with the largest population
 
     - [ ] /age/age?age=
