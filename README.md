@@ -11,7 +11,7 @@ The countries of the world have many different defining attributes including lan
 
 # Instruction
 
-- [ ] Create an array list for country objects
+- [x] Create an array list for country objects
     * Each country object will contain
       * a country name, population, land mass size, and median age
       * should contain the standard getter and setters
@@ -19,9 +19,9 @@ The countries of the world have many different defining attributes including lan
       Note: the country in suggested layout is found at the end of this document
        
 * The following URLs should return the requested data given the parameters
-    - [ ] /names/all
+    - [x] /names/all
       * return the names of all the countries alphabetically
-    - [ ] /names/begin?letter=
+    - [x] /names/begin?letter=
       * return the countries alphabetically that begin with the given letter
     - [ ] /names/size?letters=
       * return the countries alphabetically that have a name equal to or longer than the given length

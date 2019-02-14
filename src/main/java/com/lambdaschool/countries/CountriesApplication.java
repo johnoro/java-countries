@@ -7,10 +7,15 @@ import java.util.ArrayList;
 @SpringBootApplication
 public class CountriesApplication {
   static ArrayList<Country> countryList;
+
+  public static void sortAlphabetical() {
+    countryList.sort(
+      (c1, c2) -> c1.getName().compareToIgnoreCase(c2.getName())
+    );
+  }
+
   public static void main(String[] args) {
     countryList = new CountryList().countryList;
-
-    // To-do: Add CountryController
 
     SpringApplication.run(CountriesApplication.class, args);
   }
