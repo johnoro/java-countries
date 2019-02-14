@@ -33,11 +33,11 @@ The countries of the world have many different defining attributes including lan
     - [x] /population/max
       * return the country with the largest population
 
-    - [ ] /age/age?age=
+    - [x] /age/age?age=
       * return the countries that have a median age equal to or greater than the given age
-    - [ ] /age/min
+    - [x] /age/min
       * return the country with the smallest median age
-    - [ ] /age/max
+    - [x] /age/max
       * return the country the the greatest median age  
 
 // Name, Population, Land Mass in Km2, Median Age
