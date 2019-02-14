@@ -20,14 +20,14 @@ public class PopulationController {
 
   @RequestMapping("/min")
   public Country getCountryWithSmallestPopulation() {
-    CountriesApplication.sortByAge();
+    CountriesApplication.sortByPopulation();
 
     return CountriesApplication.countryList.get(0);
   }
 
   @RequestMapping("/max")
   public Country getCountryWithLargestPopulation() {
-    CountriesApplication.sortByAge();
+    CountriesApplication.sortByPopulation();
 
     return CountriesApplication.countryList.get(
       CountriesApplication.countryList.size() - 1

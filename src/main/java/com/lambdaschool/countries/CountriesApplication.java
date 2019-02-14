@@ -15,6 +15,12 @@ public class CountriesApplication {
     );
   }
 
+  public static void sortByPopulation() {
+    countryList.sort(
+      Comparator.comparingInt(Country::getPopulation)
+    );
+  }
+
   public static void sortByAge() {
     countryList.sort(
       Comparator.comparingInt(Country::getAgeMedian)
