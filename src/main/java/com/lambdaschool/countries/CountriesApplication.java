@@ -14,6 +14,20 @@ public class CountriesApplication {
     );
   }
 
+  public static ArrayList<Country> getMatches(CheckCountry tester) {
+    ArrayList<Country> matches = new ArrayList<>();
+
+    countryList.forEach(
+      country -> {
+        if (tester.test(country)) {
+          matches.add(country);
+        }
+      }
+    );
+
+    return matches;
+  };
+
   public static void main(String[] args) {
     countryList = new CountryList().countryList;
 

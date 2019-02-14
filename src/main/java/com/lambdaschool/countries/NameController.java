@@ -27,14 +27,19 @@ public class NameController {
   ) {
     CountriesApplication.sortAlphabetical();
 
-    ArrayList<Country> matches = new ArrayList<>();
-    CountriesApplication.countryList.forEach(
-      country -> {
-        if (country.getName().charAt(0) == letter) {
-          matches.add(country);
-        }
-      }
+    return CountriesApplication.getMatches(
+      country -> country.getName().charAt(0) == letter
     );
-    return matches;
+  }
+
+  @RequestMapping("/size")
+  public ArrayList<Country> getCountryBySize(
+    @RequestParam(value = "letters", defaultValue = "0") int letters
+  ) {
+    CountriesApplication.sortAlphabetical();
+
+    return CountriesApplication.getMatches(
+      country -> country.getName().length() >= letters
+    );
   }
 }
