@@ -1,7 +1,7 @@
 # Project Country Search
 
 A student that completes this project shows that they can:
-* use Maven including reading and modifying the pom.xls
+* use Maven including reading and modifying the pom.xml
 * use Tomcat to implement web services including reviewing Tomcat logs
 * use of Spring 
 
@@ -11,7 +11,7 @@ The countries of the world have many different defining attributes including lan
 
 # Instruction
 
-* Create an array list for country objects
+- [x] Create an array list for country objects
     * Each country object will contain
       * a country name, population, land mass size, and median age
       * should contain the standard getter and setters
@@ -19,25 +19,25 @@ The countries of the world have many different defining attributes including lan
       Note: the country in suggested layout is found at the end of this document
        
 * The following URLs should return the requested data given the parameters
-    * /names/all
+    - [x] /names/all
       * return the names of all the countries alphabetically
-    * /names/begin?letter=
+    - [x] /names/begin?letter=
       * return the countries alphabetically that begin with the given letter
-    * /names/size?letters=
+    - [x] /names/size?letters=
       * return the countries alphabetically that have a name equal to or longer than the given length
 
-    * /population/size?people=
+    - [x] /population/size?people=
       * return the countries that have a population equal to or greater than the given population
-    * /population/min
+    - [x] /population/min
       * return the country with the smallest population
-    * /population/max
+    - [x] /population/max
       * return the country with the largest population
 
-    * /age/age?age=
+    - [x] /age/age?age=
       * return the countries that have a median age equal to or greater than the given age
-    * /age/min
+    - [x] /age/min
       * return the country with the smallest median age
-    * /age/max
+    - [x] /age/max
       * return the country the the greatest median age  
 
 // Name, Population, Land Mass in Km2, Median Age
